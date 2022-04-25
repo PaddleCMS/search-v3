@@ -22,14 +22,14 @@
     }
   },
   "require": {
-    "php": "^7.1",
+    "php": "^7.1 || ^8.0",
     "guzzlehttp/guzzle": "~6.0",
-    "jms/serializer": "~1.9",
-    "simple-bus/jms-serializer-bridge": "^1.0",
+    "jms/serializer": "^3.11.0",
+    "simple-bus/jms-serializer-bridge": "^v6.0.0",
     "yogarine/doctrine-annotation-autoload": "^0.3.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "~7.5",
+    "phpunit/phpunit": "^9.3.11",
     "publiq/php-cs-fixer-config": "^1.3",
     "phpstan/phpstan": "^0.12.80"
   },
