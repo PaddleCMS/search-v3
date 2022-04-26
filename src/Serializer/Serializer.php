@@ -32,7 +32,7 @@ final class Serializer implements SerializerInterface
             ->setAnnotationReader(new AnnotationReader())
             ->setPropertyNamingStrategy(new SerializedNameAnnotationStrategy(new IdenticalPropertyNamingStrategy()))
             ->configureHandlers(function (HandlerRegistry $registry) {
-                $registry->registerSubscribingHandler(new DateTimeHandler());
+                $registry->registerSubscribingHandler(new DateTimeHandler(new \JMS\Serializer\Handler\DateHandler()));
                 $registry->registerSubscribingHandler(new CalendarSummaryHandler());
             })
             ->build();
